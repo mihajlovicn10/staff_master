@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Profile 
+{% endblock %}
+
+{% block content %}
+<div class="container"> 
+   <div>
+       <h4>User profile</h4> <br> 
+       <h5>First name: {{user.first_name}}</h5><br> 
+       <h5>Last name: {{user.last_name}}</h5><br> 
+       <h5>Email adress: {{user.email}}</h5><br> 
+       
+   </div>
+   <div>
+       {% for check_in_out in check_in_outs %}
+       <h3>{{check_in_out.check_in}} - {{check_in_out.check_out}}</h3>
+
+       {% endfor %}
+   </div>  
+</div>
+{% endblock %}

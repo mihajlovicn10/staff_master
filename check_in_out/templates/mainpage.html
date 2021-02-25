@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+<head> 
+{% block title %} Home page:  {% endblock %} 
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <div class="row"> 
+    {% if not checked_in %}
+        <div class="check-in-btn">
+            Click here to check in: <br> 
+            <form action="/check_in/" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-success">CHECK-IN</button>
+            </form>
+        </div> 
+    {% else %}
+        <div class="check-out-btn"> 
+            Click here to check out: <br> 
+            <form action="/check_out/">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">CHECK-OUT</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}
+</body>
+</html>

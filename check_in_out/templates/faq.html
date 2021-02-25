@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+FAQ 
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <h1>Frequently Asked Questions</h1>
+</div>
+<div class="container-fluid justify-content-center">
+    <div class="row1"> 
+        <div class="para-1">
+            <h4><em>How to log in to an application?</em></h4>
+            <p>To log in to this application, you need to become a member. To do it, go to <a href="/register/"> register page </a> and sign up.<br>
+            In case you are already signed up, you just need to go to login page, and enter your username and your password. You can find a link to login page<a href="/login/>"> here.</a></p>
+        </div>
+        <div class="para-2">
+            <h4><em>How to sign up to the application?</em></h4>
+            <p>If you are new to this platform, you need to sign up. To do this, go to the<a href="/register/"> register page</a>, fill in your personal data, username and password.<br>
+            Afterwards, you become a member, and you can log in to a platform.</p>
+        </div>
+        <div class="para-3">
+            <h4><em>Application cannot work. What should I do?</em></h4>
+            <p>If application cannot work on your device, here's what you are going to do. Check <br> 
+            First, make sure your internet connection is working properly.Check any cables and reboot any routers, modems, or other network devices you may be using.<br>
+            Second, allow your browser to access the network in your firewall or antivirus settings. If it is already listed as a program allowed to access the network, try removing it from the list and adding it again. <br> 
+            If you are using proxy server, check your proxy settings or contact your network administrator to make sure the proxy server is working. If you don't believe you should be using a proxy server: go to the main menu > settings > change proxy settings > LAN settings and deselect "Use a proxy server for your LAN". <br></p>
+          
+        </div>
+        <div class="para-4"> 
+            <h4><em>None of these options was successful. What should I do?</em></h4>
+            <p> If none of these options cannot solve your problems, <a href="/contact/"> contact</a> our tech support for further instructions.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

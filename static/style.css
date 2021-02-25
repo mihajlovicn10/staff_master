@@ -1,0 +1,10 @@
+body {
+    background-image: url("/static/background_1.jpg");
+    background-repeat: no-repeat;
+    background-position: auto;
+    opacity: 1.0;
+    background-size: 1878px 1000px ;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+    
+}
